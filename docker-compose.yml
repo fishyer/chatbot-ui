@@ -6,4 +6,5 @@ services:
     ports:
       - 3000:3000
     environment:
-      - 'OPENAI_API_KEY='
+      - 'OPENAI_API_HOST=https://api.ezchat.top'
+      - 'OPENAI_API_KEY=sk-RGNOHgDr8yavvcGn8f28F653C3804066Bd3b94De409b2487'
