@@ -1,6 +1,9 @@
 #!/bin/sh
 # This script will be run before every commit.
 
+# Path to the config file
+config_file=".husky/commit.yaml"
+
 # 获取总git提交次数
 commit_count=$(git rev-list --all --count)
 
@@ -8,8 +11,8 @@ commit_count=$(git rev-list --all --count)
 commit_time=$(date +'%Y-%m-%d %H:%M:%S')
 
 # 将commit_count和commit_time写入commit.yaml配置文件
-echo "pre_commit_count: $commit_count" > commit.yaml
-echo "pre_commit_time: $commit_time" >> commit.yaml
+echo "commit_count: $commit_count" > $config_file
+echo "commit_time: $commit_time" >> $config_file
 
 # Add commit.yaml if it's not already staged
-git add commit.yaml 
+git add $config_file
