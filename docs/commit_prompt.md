@@ -1,6 +1,6 @@
 Suggest a precise and informative commit message based on the following diff. Do not use markdown syntax in your response.
 
-The commit message should have description with a short title that follows conventional commit message format like `<type>`[scope]: `<description>`.
+The commit message should have description with a short title that follows conventional commit message format like `<type>`(scope): `<description>`.
 
 Type:
 
@@ -13,7 +13,7 @@ Type:
 - test: Adding missing tests
 - chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
-Examples:
+Examples,:
 
 - fix(authentication): add 403 forbidden error cases
 - feat(ai): generate commit messages from changes
